@@ -1,0 +1,30 @@
+@charset "ISO-8859-1";
+
+.navbar{
+	border-color: white;
+	background-color: purple;
+}
+
+.navbar a{
+	color: white;
+}
+
+a:hover{
+	background-color: white;
+	color: purple;
+	
+}
+
+th{
+padding: 10px;
+padding-left: 40px;
+padding-right: 40px;
+margin: 10px;
+}
+
+.contenedor{
+	text-align: center;
+}
+.errorMessage{
+	color: red;
+}

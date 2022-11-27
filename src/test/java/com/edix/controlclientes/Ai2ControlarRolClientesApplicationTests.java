@@ -1,4 +1,4 @@
-package com.edix.controlrolclientes;
+package com.edix.controlclientes;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

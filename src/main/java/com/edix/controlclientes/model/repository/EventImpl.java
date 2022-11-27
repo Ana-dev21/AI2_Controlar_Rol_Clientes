@@ -3,9 +3,12 @@ package com.edix.controlclientes.model.repository;
 import java.util.ArrayList;
 import java.util.List;
 
+import org.springframework.stereotype.Repository;
+
 import com.edix.controlclientes.model.beans.Event;
 import com.edix.controlclientes.utils.CalendarManager;
 
+@Repository
 public class EventImpl implements IntEventDao{
 List<Event> events;
 	
@@ -19,10 +22,10 @@ List<Event> events;
 		
 		events.add(new Event(1, "Boda María y Carlos", "Descripción Boda María y Carlos",CalendarManager.getDate(2022, 10, 3), 4, "Mallorca", "Activo",
 				true, 300, 30, 60.55, eventTypes.findById(4)));
-		events.add(new Event(2, "Despedida María", "Descripción Despedida María",CalendarManager.getDate(2022, 9, 3), 4, "Ibiza", null,
+		events.add(new Event(2, "Despedida María", "Descripción Despedida María",CalendarManager.getDate(2022, 9, 3), 4, "Ibiza", "Activo",
 				true, 300, 30, 30.50, eventTypes.findById(2)));
 		events.add(new Event(3, "Cumpleaños Javi", "Descripción Cumpleaños Javi",CalendarManager.getDate(2022, 4, 10), 4, "Mallorca", "Activo",
-				true, 300, 30, 50, eventTypes.findById(3)));
+				false, 300, 30, 50, eventTypes.findById(3)));
 	}
 	
 	
